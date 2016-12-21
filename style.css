@@ -14,6 +14,7 @@ div.thebox {
 	-webkit-transition: background-color 1.5s;
 	-moz-transition: background-color 1.5s;
 	border-radius: 10px;
+	border-collapse: separate;
 }
 
 div.thebox:hover {
@@ -73,6 +74,7 @@ div#WIPbox {
 	-moz-user-select: none;
 	cursor: default;
 	border-radius: 10px;
+	border-collapse: separate;
 }
 
 div#WIPbox.WIPactive {
