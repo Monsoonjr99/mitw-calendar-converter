@@ -13,6 +13,7 @@ div.thebox {
 	transition: background-color 1.5s;
 	-webkit-transition: background-color 1.5s;
 	-moz-transition: background-color 1.5s;
+	border-radius: 10px;
 }
 
 div.thebox:hover {
@@ -71,6 +72,7 @@ div#WIPbox {
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	cursor: default;
+	border-radius: 10px;
 }
 
 div#WIPbox.WIPactive {
