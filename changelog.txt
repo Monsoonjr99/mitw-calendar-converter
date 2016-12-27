@@ -1,0 +1,6 @@
+===============================================
+|MITW XXIX Calendar & Date Converter Changelog|
+===============================================
+
+v1.0:
+  * Initial WIP GitHub Push

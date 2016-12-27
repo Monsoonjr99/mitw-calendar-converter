@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<title>MITW XXIX Calendar & Date Converter</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
@@ -9,10 +10,10 @@
 		</div>
 		<div class="thebox">
 			<h1>MITW XXIX Calendar & Date Converter</h1>
-			<div class="somerow"></div>
+			<div class="somerow">Galactic Milliseconds: <input id="gms" type="number" value="0" onchange="updateConverter();"></input></div>
+			<div class="somerow">Zarakyth "After Civilization" Date (AC): <input id="ac" type="number" value="0" onchange="updateConverter('ac');"></input></div>
 		</div>
-		
-		
+		<a id="version" href="changelog.txt">MITW XXIX Calendar & Date Converter v<span id="versionnum"></span></a>
 		<script src="script.js"></script>
 	</body>
 </html>

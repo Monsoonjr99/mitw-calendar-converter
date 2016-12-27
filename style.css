@@ -1,9 +1,9 @@
-body {
+body{
 	background-color: #9999FF;
 	font-family: Arial;
 }
 
-div.thebox {
+div.thebox{
 	background-color: #7777FF;
 	position: absolute;
 	top: 5%;
@@ -17,11 +17,11 @@ div.thebox {
 	border-collapse: separate;
 }
 
-div.thebox:hover {
+div.thebox:hover{
 	background-color: #3333FF;
 }
 
-h1 {
+h1{
 	text-align:center;
 	color: #6666BB;
 	transition: color 1.5s;
@@ -32,11 +32,11 @@ h1 {
 	cursor: default;
 }
 
-div.thebox:hover h1 {
+div.thebox:hover h1{
 	color: #111199;
 }
 
-div#WIPshade {
+div#WIPshade{
 	display: none;
 	background-color: #999999;
 	opacity: 0;
@@ -51,11 +51,11 @@ div#WIPshade {
 	z-index: 1;
 }
 
-div#WIPshade.WIPactive {
+div#WIPshade.WIPactive{
 	opacity: 0.7;
 }
 
-div#WIPbox {
+div#WIPbox{
 	display: none;
 	background-color: #AAAAAA;
 	position: fixed;
@@ -77,6 +77,52 @@ div#WIPbox {
 	border-collapse: separate;
 }
 
-div#WIPbox.WIPactive {
+div#WIPbox.WIPactive{
 	top: 25%;
+}
+
+div.somerow{
+	left: 20px;
+	right: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: #666666;
+	transition: color 1.5s;
+	-webkit-transition: color 1.5s;
+	-moz-transition: color 1.5s;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+div.somerow input{
+	opacity: 0.7;
+	transition: opacity 1.5s;
+	-webkit-transition: opacity 1.5s;
+	-moz-transition: opacity 1.5s;
+}
+
+div.thebox:hover .somerow{
+	color: #000000;
+}
+
+div.thebox:hover .somerow input{
+	opacity: 1.0;
+}
+
+a#version{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	color: #777777;
+	text-decoration: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	cursor: default;
+	transition: color 1.5s;
+	-webkit-transition: color 1.5s;
+	-moz-transition: color 1.5s;
+}
+
+a#version:hover{
+	color: #000000;
 }
