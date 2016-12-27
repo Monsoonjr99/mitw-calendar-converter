@@ -4,3 +4,6 @@
 
 v1.0:
   * Initial WIP GitHub Push
+
+v1.0.1:
+  * Fixed changelog link showing below WIP screen, so users can see the changelog before release

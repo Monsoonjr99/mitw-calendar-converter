@@ -121,6 +121,7 @@ a#version{
 	transition: color 1.5s;
 	-webkit-transition: color 1.5s;
 	-moz-transition: color 1.5s;
+	z-index: 3;
 }
 
 a#version:hover{
