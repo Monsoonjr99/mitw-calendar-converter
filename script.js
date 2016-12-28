@@ -1,4 +1,4 @@
-var version = "1.1"
+var version = "1.1.1"
 document.getElementById("versionnum").innerHTML = version;
 
 //WIP block stuff
@@ -33,7 +33,7 @@ var TDBox = document.getElementById("td");
 var NTEBox = document.getElementById("nte");
 
 function updateConverter(changedBox){
-	if(changedBox == undefined){
+	if(changedBox == "gms"){
 		galacticMilliseconds = Number(GMSBox.value);
 	}else if(changedBox == "ac"){
 		galacticMilliseconds = ACtoGMS();
@@ -84,3 +84,22 @@ function GMStoNTE(){
 }
 
 updateConverter();
+
+//linking to conversions
+
+function getQueryVariable(variable){ //this function is someone elses code (why reinvent the wheel)
+	var query = window.location.search.substring(1);
+	var vars = query.split("&");
+	for (var i=0;i<vars.length;i++) {
+		var pair = vars[i].split("=");
+		if(pair[0] == variable){
+			return pair[1];
+		}
+	}
+	return(false);
+}
+
+if(getQueryVariable("datetype")){
+	document.getElementById(getQueryVariable("datetype")).value = getQueryVariable("datevalue");
+	updateConverter(getQueryVariable("datetype"));
+}

@@ -12,3 +12,8 @@
   + Added TD and NTE
   * Changed offset for AC to something more relevant to the canon for when galactic milliseconds are introduced to the game
   * Initial public release (removed WIP screen)
+
+12/27/2016 - v1.1.1:
+  + Added linking to conversions (append URL with "?datetype=CALENDARCODELETTERS&datevalue=N")
+    > For CALENDARCODELETTERS in "datetype=", use "gms" for gallactic milliseconds, "ac" for AC, "td" for TD, and "nte" for NTE
+    > For N in "datevalue=", use the number you wish for converting from
