@@ -4,14 +4,16 @@
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
-		<div id="WIPshade"></div>
+		<!-- <div id="WIPshade"></div>
 		<div id="WIPbox">
 			Sorry, but this is a WIP, and won't do much. Please return later when this is done.
-		</div>
+		</div> -->
 		<div class="thebox">
 			<h1>MITW XXIX Calendar & Date Converter</h1>
 			<div class="somerow">Galactic Milliseconds: <input id="gms" type="number" value="0" onchange="updateConverter();"></input></div>
 			<div class="somerow">Zarakyth "After Civilization" Date (AC): <input id="ac" type="number" value="0" onchange="updateConverter('ac');"></input></div>
+			<div class="somerow">Tagah Date (TD): <input id="td" type="number" value="0" onchange="updateConverter('td');"></input></div>
+			<div class="somerow">New Tagah Era (NTE): <input id="nte" type="number" value="0" onchange="updateConverter('nte');"></input></div>
 		</div>
 		<a id="version" href="changelog.txt">MITW XXIX Calendar & Date Converter v<span id="versionnum"></span></a>
 		<script src="script.js"></script>

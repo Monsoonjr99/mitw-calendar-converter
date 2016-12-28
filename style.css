@@ -36,7 +36,7 @@ div.thebox:hover h1{
 	color: #111199;
 }
 
-div#WIPshade{
+/* div#WIPshade{
 	display: none;
 	background-color: #999999;
 	opacity: 0;
@@ -79,7 +79,7 @@ div#WIPbox{
 
 div#WIPbox.WIPactive{
 	top: 25%;
-}
+} */
 
 div.somerow{
 	left: 20px;

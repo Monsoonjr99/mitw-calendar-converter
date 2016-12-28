@@ -1,9 +1,9 @@
-var version = "1.0.1"
+var version = "1.1"
 document.getElementById("versionnum").innerHTML = version;
 
 //WIP block stuff
 
-var WIPshade = document.getElementById("WIPshade");
+/* var WIPshade = document.getElementById("WIPshade");
 var WIPbox = document.getElementById("WIPbox");
 
 function WIPBlock(){
@@ -17,7 +17,7 @@ function WIPBlock(){
 	}
 }
 
-WIPBlock();
+WIPBlock(); */
 
 function ButImDevPlzLetMeIn(){
 	localStorage.setItem("isDev",true);
@@ -29,19 +29,27 @@ function ButImDevPlzLetMeIn(){
 var galacticMilliseconds = 0;
 var GMSBox = document.getElementById("gms");
 var ACBox = document.getElementById("ac");
+var TDBox = document.getElementById("td");
+var NTEBox = document.getElementById("nte");
 
 function updateConverter(changedBox){
-	if(changedBox==undefined){
+	if(changedBox == undefined){
 		galacticMilliseconds = Number(GMSBox.value);
-	}else if(changedBox=="ac"){
+	}else if(changedBox == "ac"){
 		galacticMilliseconds = ACtoGMS();
+	}else if(changedBox == "td"){
+		galacticMilliseconds = TDtoGMS();
+	}else if(changedBox == "nte"){
+		galacticMilliseconds = NTEtoGMS();
 	}
 	GMSBox.value = galacticMilliseconds;
 	ACBox.value = GMStoAC();
+	TDBox.value = GMStoTD();
+	NTEBox.value = GMStoNTE();
 }
 
 ACMULT = 32429057361;
-ACOFFSET = -21257938114038;
+ACOFFSET = -311868729306411;
 
 function ACtoGMS(){
 	var ACnum = Number(ACBox.value);
@@ -50,6 +58,29 @@ function ACtoGMS(){
 
 function GMStoAC(){
 	return Math.floor((galacticMilliseconds+ACOFFSET)/ACMULT);
+}
+
+TDMULT = 37936153824;
+TDOFFSET = -239649299691738;
+
+function TDtoGMS(){
+	var TDnum = Number(TDBox.value);
+	return (TDnum*TDMULT)-TDOFFSET;
+}
+
+function GMStoTD(){
+	return Math.floor((galacticMilliseconds+TDOFFSET)/TDMULT);
+}
+
+NTEOFFSET = TDOFFSET - (TDMULT*3842);
+
+function NTEtoGMS(){
+	var NTEnum = Number(NTEBox.value);
+	return (NTEnum*TDMULT)-NTEOFFSET;
+}
+
+function GMStoNTE(){
+	return Math.floor((galacticMilliseconds+NTEOFFSET)/TDMULT);
 }
 
 updateConverter();
