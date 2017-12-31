@@ -1,19 +1,24 @@
-===============================================
-|MITW XXIX Calendar & Date Converter Changelog|
-===============================================
+==========================================
+|MITW Calendar & Date Converter Changelog|
+==========================================
 
-12/26/2016 - v1.0:
-  * Initial WIP GitHub Push
+12/31/2017 - v.1.1.2:
+  + Added tabs for other MITW games (WIP)
+  * Renamed from "MITW XXIX Calendar & Date Converter" to "MITW Calendar & Date Converter" to accomodate other games
+  * Date not a typo
 
-12/26/2016 - v1.0.1:
-  * Fixed changelog link showing below WIP screen, so users can see the changelog before release
+12/27/2016 - v1.1.1:
+  + Added linking to conversions (append URL with "?datetype=CALENDARCODELETTERS&datevalue=N")
+    > For CALENDARCODELETTERS in "datetype=", use "gms" for gallactic milliseconds, "ac" for AC, "td" for TD, and "nte" for NTE
+    > For N in "datevalue=", use the number you wish for converting from
 
 12/27/2016 - v1.1:
   + Added TD and NTE
   * Changed offset for AC to something more relevant to the canon for when galactic milliseconds are introduced to the game
   * Initial public release (removed WIP screen)
 
-12/27/2016 - v1.1.1:
-  + Added linking to conversions (append URL with "?datetype=CALENDARCODELETTERS&datevalue=N")
-    > For CALENDARCODELETTERS in "datetype=", use "gms" for gallactic milliseconds, "ac" for AC, "td" for TD, and "nte" for NTE
-    > For N in "datevalue=", use the number you wish for converting from
+12/26/2016 - v1.0.1:
+  * Fixed changelog link showing below WIP screen, so users can see the changelog before release
+
+12/26/2016 - v1.0:
+  * Initial WIP GitHub Push

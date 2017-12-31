@@ -15,6 +15,7 @@ div.thebox{
 	-moz-transition: background-color 1.5s;
 	border-radius: 10px;
 	border-collapse: separate;
+	z-index: 1;
 }
 
 div.thebox:hover{
@@ -126,4 +127,30 @@ a#version{
 
 a#version:hover{
 	color: #000000;
+}
+
+.tabs{
+	position: absolute;
+	left: 180px;
+	top: -3px;
+	z-index: 0;
+}
+
+.tabs li{
+	list-style: none;
+	background-color: #7777FF;
+	color: 6666BB;
+	display: inline-block;
+	padding: 2px;
+	border-radius: 4px;
+	float: left;
+	margin-right: 5px;
+	transition: all 1.5s;
+	-webkit-transition: all 1.5s;
+	-moz-transition: all 1.5s;
+}
+
+.thebox:hover ~ .tabs .t-active{
+	background-color: #3333FF;
+	color: #111199;
 }

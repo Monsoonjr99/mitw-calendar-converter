@@ -1,4 +1,4 @@
-var version = "1.1.1"
+var version = "1.1.2"
 document.getElementById("versionnum").innerHTML = version;
 
 //WIP block stuff
